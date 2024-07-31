@@ -25,6 +25,8 @@ function App() {
   const [inputAddNumber , setInputAddNumber] = useState('') // variable que guarda el number
   const [contacts , setContacts] = useState(
     [{id:1 , name:'Jose' , number:'0913114120' , image:Jose}]
+
+    
   )// arreglo de objetos que guarda el name y number
 
   // --------------------------------------------------- 

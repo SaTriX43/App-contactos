@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  font-size: 18px;
+  font-family: sans-serif;
+  background-color: rgb(9, 9, 27);
+
+  align-items: center;
+  justify-content: center;
+
+  overflow-x: hidden;
+}
+
+.App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  min-height: 550px;
+  max-height: 550px;
+
+  border: 3px solid black;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  background-color: rgb(228, 228, 230);
+}
+
+/* estilos generales  */
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* -----------------------------------  */
+/* BOTON  */
+.mobil-boton {
+  position: absolute;
+  display: flex;
+  width: 40px;
+  height: 40px;
+
+  bottom: 5px;
+
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+/* PANTLALLA  */
+
+.pantalla {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-height:450px ;
+
+  margin-bottom: 10px;
+
+  border: 3px solid black;
+  background-color: rgb(251, 251, 251);
+
+  align-items: center;
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+}
+
+/* header  */
+
+.main__header {
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* background-color: antiquewhite; */
+
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main__header-container-img {
+  display: flex;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 10px;
+}
+
+.main__header-text {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.main__header-icon {
+  cursor: pointer;
+}
+
+.main__header-icon:hover {
+  color: gray;
+}
+
+/* --------------------------------------  */
+
+/* INPUT SEARCH  */
+
+.main__section-input-search {
+  display: flex;
+  width: 90%;
+  min-height: 30px;
+
+  padding-left: 10px;
+  padding-right: 5px;
+
+  gap: 5px;
+
+  border: 2px solid black;
+  border-radius: 20px;
+
+  align-items: center;
+}
+
+.main__input-search-icon {
+  font-size: 20px;
+}
+
+.main__input-search {
+  display: flex;
+  width: 100%;
+  height: 40px;
+
+  padding-left: 5px;
+
+  border: none;
+  background-color: transparent;
+  outline: none;
+
+  font-size: 20px;
+  
+}
+/* ----------------------------------  */
+/* Seccion de Imagenes  */
+
+.main__section-image-contact {
+  display: flex;
+  width: 100%;
+  min-height: 150px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 10px;
+  margin-top: 20px;
+
+  /* background-color: antiquewhite; */
+  overflow-x: scroll;
+}
+
+/* separete  */
+
+.main__container-separete {
+  display: flex;
+  width: 100%;
+  min-height: 30px;
+
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  background-color: aquamarine;
+  align-items: center;
+}
+
+/* ---------------------------------------  */
+/* section contacto  */
+
+.main__section-contact {
+  display: flex;
+  min-width: 450px;
+
+  gap: 10px;
+
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.main__section-container-contact {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100px;
+
+  gap: 10px;
+
+  overflow-y: scroll;
+  scrollbar-width: none
+}
+/* -----------------------------------------  */
+
+/* AGREGAR CONTACTO  */
+
+.main__section-add-contact {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  min-height: 300px;
+
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+
+  background-color: rgba(11, 11, 11, 0.453);
+
+  transform: translateX(-100%);
+  transition: all .5s ease;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main__section-add-contact-visible {
+  transform: translateX(0);
+}
+
+/* ---------------------------  */
+
+
+/* INFOCONTACT  */
+
+.main__section-info-contact {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  min-height: 350px;
+
+  background-color: white;
+
+  top: 0;
+
+  overflow-y:scroll;
+  scrollbar-width: none;
+  transform: translateY(-100%);
+  transition: all .5s ease;
+}
+
+
+.main__section-info-contact-visible {
+  transform: translateY(0);
+} 
