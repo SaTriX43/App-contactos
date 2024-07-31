@@ -1,0 +1,23 @@
+.main__container-image-contact {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+
+  gap: 2px;
+
+  align-items: center;
+}
+
+.container__image-contact {
+  display: flex;
+  width: 80px;
+  height: 80px;
+}
+
+.image__contact-name {
+  font-weight: 600;
+}
+
+.image__contact-number {
+  font-size: 12px;
+}

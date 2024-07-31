@@ -1,0 +1,31 @@
+.container__Alphabet {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  gap: 5px;
+  overflow-y:scroll;
+}
+
+.container__Alphabet::-webkit-scrollbar {
+  width: 0px;
+}
+
+.Alphabet-text {
+  display: flex;
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+}
+
+.Alphabet-text:hover {
+  background-color: rgb(157, 226, 203);
+}
